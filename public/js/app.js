@@ -1,5 +1,3 @@
-console.log('Client side javascript file loaded');
-
 document.addEventListener('DOMContentLoaded', () => {
     const weatherForm = document.querySelector('#weatherForm');
     const latitudeInput = document.querySelector('#latitudeInput');
