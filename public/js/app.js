@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         messageOne.textContent = 'Loading...'
         messageTwo.textContent = ''
 
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=40af0b5acb366a5ad933804ea95d15a8`)
+        fetch(`/weather?lat=${latitude}&lon=${longitude}`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Unable to fetch weather data')
